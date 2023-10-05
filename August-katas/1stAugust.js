@@ -9,26 +9,26 @@
 // Note: String will have at least one element; words will always be separated by a space.
 
 
-function addLength(str) {
-let array=[] //Empty array to contain the words from string
+// function addLength(str) {
+// let array=[] //Empty array to contain the words from string
 
-let arr=str.split(' ');// this line will transform a string into array
-  for (let w of arr){
+// let arr=str.split(' ');// this line will transform a string into array
+//   for (let w of arr){
     
-   array.push(w. concat(' ' , w.length)) //this line will get each and every word ,conact it with it's length
+//    array.push(w. concat(' ' , w.length)) //this line will get each and every word ,conact it with it's length
   
-   }
+//    }
    
-  return array
-}
-console.log(addLength('apple ban'))
+//   return array
+// }
+
 
 //LEARNT FROM OTHERS
 
-// function addLength(str){
-//   return str.split(" ").map(s => `${s} ${s.length}`)
-// }
-
+function addLength(str){
+  return str.split(" ").map(s => `${s} ${s.length}`)
+}
+console.log(addLength('apple ban'))
 // ;
 // var addLength = s => s.split(' ').map(x => x + ' ' + x.length);
 
@@ -37,3 +37,7 @@ console.log(addLength('apple ban'))
 // function addLength(str) {
 //   return str.split(' ').map(word => word + ' ' + word.length)
 // }
+function addLength(str){
+  return str.split(' ').map(s=>`${s} ${s.length}`)
+
+}
