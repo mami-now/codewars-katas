@@ -12,7 +12,8 @@ Happy Coding! */
 
 
 const squarEveryNumber=(number)=>{
-  const sqrnum=number.toString().split('').map(item=>item**2).toString().split(',').join('');
-  return parseInt(sqrnum) 
+  // const sqrnum=number.toString().split('').map(item=>item**2).toString().split(',').join('');
+  const sqrnum=number.toString().split('').map(number=>number**2).join('')
+  return parseInt(sqrnum)
 }
 console.log(squarEveryNumber(3212));

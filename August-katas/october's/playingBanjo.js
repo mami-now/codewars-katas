@@ -9,7 +9,7 @@ Names given are always valid strings. */
 
 const areYouPlayingBanjo = (name)=>{
 
-return name.startsWith('r' ||'R')? `${name} plays foot ball `:`${name}does not play banjo`;
+return name.startsWith('r' ||'R')? `${name} plays foot ball `:`${name} does not play banjo`;
 }
-console.log(areYouPlayingBanjo('rambert'));
+console.log(areYouPlayingBanjo('Adam'));
 
